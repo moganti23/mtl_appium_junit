@@ -1,0 +1,91 @@
+import java.util.concurrent.TimeUnit;
+import java.util.Date;
+import java.io.File;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.*;
+import static org.openqa.selenium.OutputType.*;
+
+public class {scriptName} {
+	public static void main(String[] args) {
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability(CapabilityType.BROWSER_NAME, "iOS");
+		capabilities.setCapability(CapabilityType.VERSION, "6.1");
+		capabilities.setCapability(CapabilityType.PLATFORM, "Mac");
+		capabilities.setCapability("device", "iPhone Retina (4-inch)");
+		capabilities.setCapability("app", "/Users/sriramangajala/Documents/Mobile Test Lab/DerivedData/Mobile Test Lab/Build/Products/Debug-iphoneos/Mobile Test Lab.app");
+		wd = new RemoteWebDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+		wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		wd.close();
+	}
+}
+import java.util.concurrent.TimeUnit;
+import java.util.Date;
+import java.io.File;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.*;
+import static org.openqa.selenium.OutputType.*;
+
+public class {scriptName} {
+	public static void main(String[] args) {
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability(CapabilityType.BROWSER_NAME, "iOS");
+		capabilities.setCapability(CapabilityType.VERSION, "6.1");
+		capabilities.setCapability(CapabilityType.PLATFORM, "Mac");
+		capabilities.setCapability("device", "iPhone Retina (4-inch)");
+		capabilities.setCapability("app", "/Users/sriramangajala/Documents/Mobile Test Lab/DerivedData/Mobile Test Lab/Build/Products/Debug-iphoneos/Mobile Test Lab.app");
+		wd = new RemoteWebDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+		wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		wd.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextField[1]")).sendKeys("recording");
+		wd.close();
+	}
+}
+import java.util.concurrent.TimeUnit;
+import java.util.Date;
+import java.io.File;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.*;
+import static org.openqa.selenium.OutputType.*;
+
+public class {scriptName} {
+	public static void main(String[] args) {
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability(CapabilityType.BROWSER_NAME, "iOS");
+		capabilities.setCapability(CapabilityType.VERSION, "6.1");
+		capabilities.setCapability(CapabilityType.PLATFORM, "Mac");
+		capabilities.setCapability("device", "iPhone Retina (4-inch)");
+		capabilities.setCapability("app", "/Users/sriramangajala/Documents/Mobile Test Lab/DerivedData/Mobile Test Lab/Build/Products/Debug-iphoneos/Mobile Test Lab.app");
+		wd = new RemoteWebDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+		wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		wd.close();
+	}
+}
+import java.util.concurrent.TimeUnit;
+import java.util.Date;
+import java.io.File;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.*;
+import static org.openqa.selenium.OutputType.*;
+
+public class {scriptName} {
+	public static void main(String[] args) {
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability(CapabilityType.BROWSER_NAME, "iOS");
+		capabilities.setCapability(CapabilityType.VERSION, "6.1");
+		capabilities.setCapability(CapabilityType.PLATFORM, "Mac");
+		capabilities.setCapability("device", "iPhone Retina (4-inch)");
+		capabilities.setCapability("app", "/Users/sriramangajala/Documents/Mobile Test Lab/DerivedData/Mobile Test Lab/Build/Products/Debug-iphoneos/Mobile Test Lab.app");
+		wd = new RemoteWebDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+		wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		wd.findElement(By.name("Login")).click();
+		wd.close();
+	}
+}
+
