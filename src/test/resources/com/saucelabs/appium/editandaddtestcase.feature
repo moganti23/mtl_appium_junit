@@ -4,6 +4,7 @@ Feature: User can add and edit testcase
   Scenario: user can add a test case - happy path
 
     Given user is in test case page
+    And adds a test cases
     When 'title' is set as 'Title'
     And select 'Tester one' in the 'owner' from drop down list
     And select 'low' in the 'priority' from drop down list

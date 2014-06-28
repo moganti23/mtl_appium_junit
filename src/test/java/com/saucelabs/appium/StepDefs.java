@@ -229,8 +229,14 @@ public class StepDefs {
         User_is_on_the_Folders_View_Page();
         User_taps_on_foldername("Non functional");
         User_taps_on_foldername("Installation1");
-        driver.findElement(By.name("Add Test Cases")).click();
 
+
+    }
+
+    @Given("^adds a test cases$")
+    public void addTestcases()
+    {
+        driver.findElement(By.name("Add Test Cases")).click();
     }
 
     @When("^'title' is set as '(.*)'$")
@@ -289,6 +295,73 @@ public class StepDefs {
         }
         Assert.assertTrue(isTextPresent("Testcase is saved successfully"));
         driver.findElement(By.name("Ok")).click();
+    }
+
+    @Given("^User is on a Particular '(.*)' for which he wants to execute testcase$")
+    public void User_is_on_a_Particular_Title_for_which_he_wants_to_execute_testcase(String testcase) {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.findElement(By.name(testcase)).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Given("^User has navigated to this Page in 'Execute' mode$")
+    public void User_has_navigated_to_this_Page_in_Execute_mode() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+                e.printStackTrace();
+        }
+        driver.findElement(By.name("Execute")).click();
+    }
+
+    @When("^User enters the data in the 'Actual Results' field$")
+    public void User_enters_the_data_in_the_Actual_Results_field() {
+        // Express the Regexp above with the code you wish you had
+//        throw new PendingException();
+    }
+
+    @When("^User taps the 'Pass' button$")
+    public void User_taps_the_Pass_button() {
+        // Express the Regexp above with the code you wish you had
+//        throw new PendingException();
+    }
+
+    @Then("^User should see the Status dropdown list with the value 'Pass'$")
+    public void User_should_see_the_Status_dropdown_list_with_the_value_Pass() {
+        // Express the Regexp above with the code you wish you had
+//        throw new PendingException();
+    }
+
+    @When("^User taps the 'Save' button$")
+    public void User_taps_the_Save_button() {
+        // Express the Regexp above with the code you wish you had
+//        throw new PendingException();
+    }
+
+    @Then("^User can see notification as 'Test Case Updated'$")
+    public void User_can_see_notification_as_Test_Case_Updated() {
+        // Express the Regexp above with the code you wish you had
+//        throw new PendingException();
+    }
+
+    @Then("^User should Navigate to the 'Test Case view' list Page$")
+    public void User_should_Navigate_to_the_Test_Case_view_list_Page() {
+        // Express the Regexp above with the code you wish you had
+//        throw new PendingException();
+    }
+
+    @Then("^User can see the 'Status' field updated with 'Pass' for the test cases which was executed$")
+    public void User_can_see_the_Status_field_updated_with_Pass_for_the_test_cases_which_was_executed() {
+        // Express the Regexp above with the code you wish you had
+//        throw new PendingException();
     }
 
 }

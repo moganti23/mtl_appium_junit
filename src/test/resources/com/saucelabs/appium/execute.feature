@@ -1,10 +1,11 @@
 Feature: Execute test cases
 
+  @new
   Scenario: User Can Update the 'Status' as pass by tapping on the 'Pass' and clicking 'Save' button
 
     Given user is in test case page
-    And User is on a Particular 'Test Case View' for which he wants to execute testcase
     And User has navigated to this Page in 'Execute' mode
+    And User is on a Particular 'Title, Auto description' for which he wants to execute testcase
     When User enters the data in the 'Actual Results' field
     And User taps the 'Pass' button
     Then User should see the Status dropdown list with the value 'Pass'
