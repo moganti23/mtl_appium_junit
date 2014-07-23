@@ -19,7 +19,7 @@ import org.openqa.selenium.NoSuchElementException;
  * Created by sriramangajala on 06/05/2014.
  */
 public class StepDefs {
-    static boolean IOS = true;
+    static boolean IOS = false;
 
 
     WebDriver driver;
@@ -241,8 +241,13 @@ public class StepDefs {
 
     @When("^'title' is set as '(.*)'$")
     public void _title_is_set_as_Test_case_Title(String title) {
-        driver.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextField[1]")).sendKeys(title);
-        driver.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIAKeyboard[1]/UIAButton[4]")).click();
+
+        if(IOS==false)
+            driver.findElement(By.xpath("//android.widget.ScrollView[1]/android.widget.EditText[1]")).sendKeys(title);
+        else {
+            driver.findElement(By.xpath("//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIATextField[1]")).sendKeys(title);
+            driver.findElement(By.xpath("//UIAApplication[1]/UIAWindow[2]/UIAKeyboard[1]/UIAButton[4]")).click();
+        }
     }
 
     @When("^select 'Tester one' in the 'owner' from drop down list$")
@@ -324,8 +329,7 @@ public class StepDefs {
 
     @When("^User enters the data in the 'Actual Results' field$")
     public void User_enters_the_data_in_the_Actual_Results_field() {
-        // Express the Regexp above with the code you wish you had
-//        throw new PendingException();
+
     }
 
     @When("^User taps the 'Pass' button$")

@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 @RunWith(Cucumber.class)
 @Cucumber.Options(
         format = {"html:target/cucumber"},
-        tags = "@new")
+        tags = "@testcaseview")
 public class RunTests {
     static boolean IOS = StepDefs.IOS;
     static WebDriver driver;
